@@ -1,4 +1,4 @@
-# MANUAL DE INSTALARE A SISTEMULUI ECC S/P v1.1
+# MANUAL DE INSTALARE A SISTEMULUI ECC S/P v1.2
 
 ---
 
@@ -18,8 +18,8 @@
 
 | Arhitectură  | SHA-256                                                            |
 | ------------ | ------------------------------------------------------------------ |
-| LINUX/AMD64  | `46572fb971d351c262b0c6ddadbc9c6a57706f8b3c018a4c829353950cc04a71` |
-| LINUX/ARM64  | `8abdca6d9428353dd8d25801cf4ff3cc0fe88519dc8fa680d14aee9350d9f74d` |
+| LINUX/AMD64  | `8833dbb9358d8750e61502d19efe1dae2ea45b4a75052441e4dec07db24ae7f0` |
+| LINUX/ARM64  | `04c645cccf31f79aeab30bf468faa7016a3850ffd2e79d2b8b2884e88753be1a` |
 
 ---
 
