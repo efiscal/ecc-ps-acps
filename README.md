@@ -112,7 +112,7 @@ Aflându-vă în cadrul folderului clonat, puteți executa următoarele comenzi:
 După lansarea sistemului pentru prima dată folosind `./bin/start.sh`, este nevoie de instalat licența care v-a fost emisă de către **Fiscal Partner**. Aveți licența pe disk-ul local, apoi încărcați-o prin Browser:
 
 ```text
-https://localhost:8443
+https://127.0.0.170:8443
 ```
 
 ### 9. Backup și restaurare
@@ -209,3 +209,11 @@ Pentru lista completă de opțiuni:
 ### 10. Informații suplimentare
 
 Pentru mai multe detalii, vă rugăm să citiți **manualul oficial de instalare** care v-a fost transmis de Fiscal Partner.
+
+## Local Docker ports: 127.0.0.170 only (security)
+
+`docker compose` publishes this project only on **127.0.0.170**, its own loopback address, so it can run next to
+other projects on the same machine: open https://127.0.0.170:8443. **Never publish a port on 0.0.0.0** (a bare `"8443:443"`
+does that): it opens the service to every network the machine is on, and Docker bypasses the firewall.
+The rule is at the top of `docker-compose.yml`. On macOS, run `sudo ifconfig lo0 alias 127.0.0.170 up` once after
+each boot. After pulling this change, run `docker compose up -d` to move running containers.
